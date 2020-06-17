@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40250ADE6A1EC608641A6F27 /* Pods_GGLBooksAPI001.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D9C1DC7CE614DE2B67E6C3 /* Pods_GGLBooksAPI001.framework */; };
 		8D1786F9249AC0850038432E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1786F8249AC0850038432E /* AppDelegate.swift */; };
 		8D1786FB249AC0850038432E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1786FA249AC0850038432E /* SceneDelegate.swift */; };
 		8D1786FD249AC0850038432E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1786FC249AC0850038432E /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		374E443DAA9F3D33EA04C90D /* Pods-GGLBooksAPI001.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGLBooksAPI001.release.xcconfig"; path = "Target Support Files/Pods-GGLBooksAPI001/Pods-GGLBooksAPI001.release.xcconfig"; sourceTree = "<group>"; };
+		5F5BBD153B55167AC147E0F8 /* Pods-GGLBooksAPI001.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGLBooksAPI001.debug.xcconfig"; path = "Target Support Files/Pods-GGLBooksAPI001/Pods-GGLBooksAPI001.debug.xcconfig"; sourceTree = "<group>"; };
+		88D9C1DC7CE614DE2B67E6C3 /* Pods_GGLBooksAPI001.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGLBooksAPI001.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1786F5249AC0850038432E /* GGLBooksAPI001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGLBooksAPI001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1786F8249AC0850038432E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D1786FA249AC0850038432E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40250ADE6A1EC608641A6F27 /* Pods_GGLBooksAPI001.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F344E3F56D5DF10951B1C37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88D9C1DC7CE614DE2B67E6C3 /* Pods_GGLBooksAPI001.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D1786EC249AC0850038432E = {
 			isa = PBXGroup;
 			children = (
 				8D1786F7249AC0850038432E /* GGLBooksAPI001 */,
 				8D1786F6249AC0850038432E /* Products */,
+				8E935C1D094B4E2CBF23AC3E /* Pods */,
+				4F344E3F56D5DF10951B1C37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = GGLBooksAPI001;
 			sourceTree = "<group>";
 		};
+		8E935C1D094B4E2CBF23AC3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F5BBD153B55167AC147E0F8 /* Pods-GGLBooksAPI001.debug.xcconfig */,
+				374E443DAA9F3D33EA04C90D /* Pods-GGLBooksAPI001.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D178709249AC0850038432E /* Build configuration list for PBXNativeTarget "GGLBooksAPI001" */;
 			buildPhases = (
+				3BD96AA01C52A1275E36D0B1 /* [CP] Check Pods Manifest.lock */,
 				8D1786F1249AC0850038432E /* Sources */,
 				8D1786F2249AC0850038432E /* Frameworks */,
 				8D1786F3249AC0850038432E /* Resources */,
+				8EC83D864F2AD978D0DD54AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BD96AA01C52A1275E36D0B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GGLBooksAPI001-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EC83D864F2AD978D0DD54AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GGLBooksAPI001/Pods-GGLBooksAPI001-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GGLBooksAPI001/Pods-GGLBooksAPI001-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GGLBooksAPI001/Pods-GGLBooksAPI001-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D1786F1249AC0850038432E /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		8D17870A249AC0850038432E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F5BBD153B55167AC147E0F8 /* Pods-GGLBooksAPI001.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +364,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nifty.cbm01799.GGLBooksAPI001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8D17870B249AC0850038432E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374E443DAA9F3D33EA04C90D /* Pods-GGLBooksAPI001.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nifty.cbm01799.GGLBooksAPI001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

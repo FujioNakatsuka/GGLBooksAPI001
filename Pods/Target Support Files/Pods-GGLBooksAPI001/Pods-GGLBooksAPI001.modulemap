@@ -1,0 +1,6 @@
+framework module Pods_GGLBooksAPI001 {
+  umbrella header "Pods-GGLBooksAPI001-umbrella.h"
+
+  export *
+  module * { export * }
+}
